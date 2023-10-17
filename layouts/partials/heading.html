@@ -1,0 +1,7 @@
+{{ $id := .id | default (anchorize (plainify .text)) }}
+<a class="relative -top-16" name="{{ $id }}"></a>
+<h{{ .level }} {{ with .class }} class="{{ . }}" {{ end }}>
+  <a class="text-black dark:text-white no-underline hover:underline" href="#{{ $id }}">
+    {{ .text }}
+  </a>
+</h{{ .level }}>

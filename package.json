@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/Crouton-Digital/service.crouton.digital/issues"
   },
-  "homepage": "https://services.crouton.digital//",
+  "homepage": "https://services.crouton.digital/",
   "devDependencies": {
     "@alpinejs/collapse": "^3.11.1",
     "@docsearch/js": "^3.5.2",
@@ -28,5 +28,8 @@
     "prettier": "^3.0.0",
     "prettier-plugin-tailwindcss": "^0.5.3",
     "tailwindcss": "^3.2.4"
+  },
+  scripts: {
+    "index": "hugo-algolia"
   }
 }

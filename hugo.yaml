@@ -84,7 +84,7 @@ params:
     onetrust: 8e0ebfd9-035d-4ec2-9b2f-a2de9c09f906
   algolia:
     appid: L22VPDDY7O
-    apikey: 5c1133652dd08b3c3a5c681263b77848
+    apikey: 3e806cfd553be17c3ea081c37702e161
     indexname: services
 
   repo: https://github.com/Crouton-Digital/service.crouton.digital

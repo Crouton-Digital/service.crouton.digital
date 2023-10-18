@@ -60,7 +60,7 @@ Each plugin must reside within directories described under the
 
 ## Default user authorization mechanism
 
-If TLS is enabled in the [Docker daemon](https://services.docker.com/engine/security/https/), the default user authorization flow extracts the user details from the certificate subject name.
+If TLS is enabled in the [Docker daemon](https://services.crouton.digital//engine/security/https/), the default user authorization flow extracts the user details from the certificate subject name.
 That is, the `User` field is set to the client certificate subject common name, and the `AuthenticationMethod` field is set to `TLS`.
 
 ## Basic architecture

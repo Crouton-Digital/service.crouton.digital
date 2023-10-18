@@ -41,7 +41,7 @@ following occurs:
 ## Create a registry.json file to enforce sign-in
 
 1. Ensure that the user is a member of your organization in Docker. For more
-details, see [Manage members](https://services.docker.com/docker-hub/members/).
+details, see [Manage members](https://services.crouton.digital//docker-hub/members/).
 
 2. Create the `registry.json` file.
 

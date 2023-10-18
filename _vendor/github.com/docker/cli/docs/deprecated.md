@@ -18,7 +18,7 @@ keywords: "docker, documentation, about, technology, deprecate"
 This page provides an overview of features that are deprecated in Engine. Changes
 in packaging, and supported (Linux) distributions are not included. To learn
 about end of support for Linux distributions, refer to the
-[release notes](https://services.docker.com/engine/release-notes/).
+[release notes](https://services.crouton.digital//engine/release-notes/).
 
 ## Feature Deprecation Policy
 
@@ -143,7 +143,7 @@ information is also embedded into the image configuration if one is generated.
 **Deprecated in Release: v23.0**
 
 Docker v23.0 now uses BuildKit by default to build Linux images, and uses the
-[Buildx](https://services.docker.com/buildx/working-with-buildx/) CLI component for
+[Buildx](https://services.crouton.digital//buildx/working-with-buildx/) CLI component for
 `docker build`. With this change, `docker build` now exposes all advanced features
 that BuildKit provides and which were previously only available through the
 `docker buildx` subcommands.
@@ -158,7 +158,7 @@ This release marks the beginning of the deprecation cycle of the classic ("legac
 builder for Linux images. No active development will happen on the classic builder
 (except for bugfixes). BuildKit development started five Years ago, left the
 "experimental" phase since Docker 18.09, and is already the default builder for
-[Docker Desktop](https://services.docker.com/desktop/previous-versions/3.x-mac/#docker-desktop-320).
+[Docker Desktop](https://services.crouton.digital//desktop/previous-versions/3.x-mac/#docker-desktop-320).
 While we're comfortable that BuildKit is stable for general use, there may be
 some changes in behavior. If you encounter issues with BuildKit, we encourage
 you to report issues in the [BuildKit issue tracker on GitHub](https://github.com/moby/buildkit/){:target="_blank" rel="noopener" class="_"}
@@ -189,12 +189,12 @@ builder, but prints a deprecation warning:
 ```
 DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
             Install the buildx component to build images with BuildKit:
-            https://services.docker.com/go/buildx/
+            https://services.crouton.digital//go/buildx/
 ```
 
 This situation may occur if the `docker` CLI is installed using the static binaries,
 and the Buildx component is not installed or not installed correctly. This fallback
-will be removed in a future release, therefore we recommend to [install the Buildx component](https://services.docker.com/go/buildx/)
+will be removed in a future release, therefore we recommend to [install the Buildx component](https://services.crouton.digital//go/buildx/)
 and use BuildKit for your builds, or opt-out of using BuildKit with `DOCKER_BUILDKIT=0`.
 
 If you opted-in to use BuildKit (`DOCKER_BUILDKIT=1`), but the Buildx component
@@ -203,10 +203,10 @@ is missing, an error is printed instead, and the `docker build` command fails:
 ```
 ERROR: BuildKit is enabled but the buildx component is missing or broken.
        Install the buildx component to build images with BuildKit:
-       https://services.docker.com/go/buildx/
+       https://services.crouton.digital//go/buildx/
 ```
 
-We recommend to [install the Buildx component](https://services.docker.com/go/buildx/)
+We recommend to [install the Buildx component](https://services.crouton.digital//go/buildx/)
 to continue using BuildKit for your builds, but alternatively, users can either
 unset the `DOCKER_BUILDKIT` environment variable to fall back to the legacy builder,
 or opt-out of using BuildKit with `DOCKER_BUILDKIT=0`.
@@ -315,7 +315,7 @@ its introduction, the feature never reached completeness, and development has
 now stopped in favor of running docker natively on Linux in WSL2.
 
 Developers who want to run Linux workloads on a Windows host are encouraged to use
-[Docker Desktop with WSL2](https://services.docker.com/docker-for-windows/wsl/) instead.
+[Docker Desktop with WSL2](https://services.crouton.digital//docker-for-windows/wsl/) instead.
 
 ### BLKIO weight options with cgroups v1
 
@@ -586,7 +586,7 @@ fail to start if a deprecated storage driver is used (see [moby#43378](https://g
 failed to start daemon: error initializing graphdriver: prior storage driver
 devicemapper is deprecated and will be removed in a future release; update the the daemon
 configuration and explicitly choose this storage driver to continue using it;
-visit https://services.docker.com/go/storage-driver/ for more information.
+visit https://services.crouton.digital//go/storage-driver/ for more information.
 ```
 
 To continue using the storage driver, update the daemon configuration to use
@@ -630,7 +630,7 @@ the v1 protocol.
 
 Support for the v1 protocol to the public registry was removed in 1.13. Any
 mirror configurations using v1 should be updated to use a
-[v2 registry mirror](https://services.docker.com/registry/recipes/mirror/).
+[v2 registry mirror](https://services.crouton.digital//registry/recipes/mirror/).
 
 Starting with Docker 17.12, support for V1 registries has been removed, and the
 `--disable-legacy-registry` flag can no longer be used, and `dockerd` will fail to

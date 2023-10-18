@@ -58,4 +58,4 @@ In the above example:
   profile `debug` is automatically enabled and service `bar` is pulled in as a dependency starting both
   services `zot` and `bar`.
 
-See how you can use `profiles` in [Docker Compose](https://services.docker.com/compose/profiles/).
+See how you can use `profiles` in [Docker Compose](https://services.crouton.digital//compose/profiles/).

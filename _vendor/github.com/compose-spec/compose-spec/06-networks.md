@@ -134,7 +134,7 @@ networks:
 
 #### enable_ipv6
 
-`enable_ipv6` enables IPv6 networking. For an example, see step four of [Create an IPv6 network](https://services.docker.com/config/daemon/ipv6/).
+`enable_ipv6` enables IPv6 networking. For an example, see step four of [Create an IPv6 network](https://services.crouton.digital//config/daemon/ipv6/).
 
 ### external
 

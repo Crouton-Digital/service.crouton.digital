@@ -125,7 +125,7 @@ enabled, and use it to create a volume.
 To disable a plugin, use the `docker plugin disable` command. To completely
 remove it, use the `docker plugin remove` command. For other available
 commands and options, see the
-[command line reference](https://services.docker.com/engine/reference/commandline/cli/).
+[command line reference](https://services.crouton.digital//engine/reference/commandline/cli/).
 
 ## Developing a plugin
 
@@ -157,7 +157,7 @@ Consider the following `config.json` file.
 ```json
 {
   "description": "sshFS plugin for Docker",
-  "documentation": "https://services.docker.com/engine/extend/plugins/",
+  "documentation": "https://services.crouton.digital//engine/extend/plugins/",
   "entrypoint": ["/docker-volume-sshfs"],
   "network": {
     "type": "host"

@@ -11,7 +11,7 @@ docsearch({
   transformItems(items) {
     return items.map((item) => ({
       ...item,
-      url: item.url.replace("https://services.docker.com", ""),
+      url: item.url.replace("https://services.crouton.digital/", ""),
     }));
   },
 });

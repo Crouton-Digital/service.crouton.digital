@@ -21,7 +21,7 @@ Docker runs instructions in a `Dockerfile` in order. A `Dockerfile` **must
 begin with a `FROM` instruction**. This may be after [parser
 directives](#parser-directives), [comments](#format), and globally scoped
 [ARGs](#arg). The `FROM` instruction specifies the [*Parent
-Image*](https://services.docker.com/glossary/#parent-image) from which you are
+Image*](https://services.crouton.digital//glossary/#parent-image) from which you are
 building. `FROM` may only be preceded by one or more `ARG` instructions, which
 declare arguments that are used in `FROM` lines in the `Dockerfile`.
 
@@ -162,10 +162,10 @@ The following parser directives are supported:
 
 <a name="external-implementation-features"><!-- included for deep-links to old section --></a>
 
-This feature is only available when using the [BuildKit](https://services.docker.com/build/buildkit/)
+This feature is only available when using the [BuildKit](https://services.crouton.digital//build/buildkit/)
 backend, and is ignored when using the classic builder backend.
 
-See [Custom Dockerfile syntax](https://services.docker.com/build/buildkit/dockerfile-frontend/)
+See [Custom Dockerfile syntax](https://services.crouton.digital//build/buildkit/dockerfile-frontend/)
 page for more information.
 
 ### escape
@@ -336,7 +336,7 @@ that set `abc` to `bye`.
 
 You can use `.dockerignore` file to exclude files and directories from the
 build context. For more information, see
-[.dockerignore file](https://services.docker.com/build/building/context#dockerignore-files/).
+[.dockerignore file](https://services.crouton.digital//build/building/context#dockerignore-files/).
 
 ## FROM
 
@@ -357,10 +357,10 @@ FROM [--platform=<platform>] <image>[@<digest>] [AS <name>]
 ```
 
 The `FROM` instruction initializes a new build stage and sets the
-[*Base Image*](https://services.docker.com/glossary/#base-image) for subsequent instructions. As such, a
+[*Base Image*](https://services.crouton.digital//glossary/#base-image) for subsequent instructions. As such, a
 valid `Dockerfile` must start with a `FROM` instruction. The image can be
 any valid image – it is especially easy to start by **pulling an image** from
-the [*Public Repositories*](https://services.docker.com/docker-hub/repos/).
+the [*Public Repositories*](https://services.crouton.digital//docker-hub/repos/).
 
 - `ARG` is the only instruction that may precede `FROM` in the `Dockerfile`.
   See [Understand how ARG and FROM interact](#understand-how-arg-and-from-interact).
@@ -491,7 +491,7 @@ cache for `RUN` instructions can be invalidated by using the `--no-cache`
 flag, for example `docker build --no-cache`.
 
 See the [`Dockerfile` Best Practices
-guide](https://services.docker.com/engine/userguide/eng-image/dockerfile_best-practices/) for more information.
+guide](https://services.crouton.digital//engine/userguide/eng-image/dockerfile_best-practices/) for more information.
 
 The cache for `RUN` instructions can be invalidated by [`ADD`](#add) and [`COPY`](#copy) instructions.
 
@@ -706,7 +706,7 @@ The command is run in the host's network environment (similar to
 > The use of `--network=host` is protected by the `network.host` entitlement, 
 > which needs to be enabled when starting the buildkitd daemon with
 > `--allow-insecure-entitlement network.host` flag or in [buildkitd config](https://github.com/moby/buildkit/blob/master/docs/buildkitd.toml.md),
-> and for a build request with [`--allow network.host` flag](https://services.docker.com/engine/reference/commandline/buildx_build/#allow).
+> and for a build request with [`--allow network.host` flag](https://services.crouton.digital//engine/reference/commandline/buildx_build/#allow).
 {:.warning}
 
 ## RUN --security
@@ -726,7 +726,7 @@ This is equivalent to running `docker run --privileged`.
 > In order to access this feature, entitlement `security.insecure` should be
 > enabled when starting the buildkitd daemon with
 > `--allow-insecure-entitlement security.insecure` flag or in [buildkitd config](https://github.com/moby/buildkit/blob/master/docs/buildkitd.toml.md),
-> and for a build request with [`--allow security.insecure` flag](https://services.docker.com/engine/reference/commandline/buildx_build/#allow).
+> and for a build request with [`--allow security.insecure` flag](https://services.crouton.digital//engine/reference/commandline/buildx_build/#allow).
 {:.warning}
 
 #### Example: check entitlements
@@ -935,12 +935,12 @@ the `-p` flag. For example
 $ docker run -p 80:80/tcp -p 80:80/udp ...
 ```
 
-To set up port redirection on the host system, see [using the -P flag](https://services.docker.com/engine/reference/run/#expose-incoming-ports).
+To set up port redirection on the host system, see [using the -P flag](https://services.crouton.digital//engine/reference/run/#expose-incoming-ports).
 The `docker network` command supports creating networks for communication among
 containers without the need to expose or publish specific ports, because the
 containers connected to the network can communicate with each other over any
 port. For detailed information, see the
-[overview of this feature](https://services.docker.com/engine/userguide/networking/).
+[overview of this feature](https://services.crouton.digital//engine/userguide/networking/).
 
 ## ENV
 
@@ -977,7 +977,7 @@ from the resulting image. You can view the values using `docker inspect`, and
 change them using `docker run --env <key>=<value>`.
 
 A stage inherits any environment variables that were set using `ENV` by its
-parent stage or any ancestor. Refer [here](https://services.docker.com/build/building/multi-stage/)
+parent stage or any ancestor. Refer [here](https://services.crouton.digital//build/building/multi-stage/)
 for more on multi-staged builds.
 
 Environment variable persistence can cause unexpected side effects. For example,
@@ -1039,7 +1039,7 @@ The latter form is required for paths containing whitespace.
 
 > **Note**
 >
-> `--chmod` is supported since [Dockerfile 1.3](https://services.docker.com/build/buildkit/dockerfile-frontend/).
+> `--chmod` is supported since [Dockerfile 1.3](https://services.crouton.digital//build/buildkit/dockerfile-frontend/).
 > Only octal notation is currently supported. Non-octal support is tracked in
 > [moby/buildkit#1951](https://github.com/moby/buildkit/issues/1951).
 
@@ -1140,7 +1140,7 @@ does not support authentication.
 > following instructions from the Dockerfile if the contents of `<src>` have
 > changed. This includes invalidating the cache for `RUN` instructions.
 > See the [`Dockerfile` Best Practices
-guide – Leverage build cache](https://services.docker.com/develop/develop-images/dockerfile_best-practices/#leverage-build-cache)
+guide – Leverage build cache](https://services.crouton.digital//develop/develop-images/dockerfile_best-practices/#leverage-build-cache)
 > for more information.
 
 
@@ -1385,7 +1385,7 @@ attempted to be used instead.
 > following instructions from the Dockerfile if the contents of `<src>` have
 > changed. This includes invalidating the cache for `RUN` instructions.
 > See the [`Dockerfile` Best Practices
-guide – Leverage build cache](https://services.docker.com/develop/develop-images/dockerfile_best-practices/#leverage-build-cache)
+guide – Leverage build cache](https://services.crouton.digital//develop/develop-images/dockerfile_best-practices/#leverage-build-cache)
 > for more information.
 
 ## COPY --link
@@ -1766,7 +1766,7 @@ containers. The value can be a JSON array, `VOLUME ["/var/log/"]`, or a plain
 string with multiple arguments, such as `VOLUME /var/log` or `VOLUME /var/log
 /var/db`. For more information/examples and mounting instructions via the
 Docker client, refer to
-[*Share Directories via Volumes*](https://services.docker.com/storage/volumes/)
+[*Share Directories via Volumes*](https://services.crouton.digital//storage/volumes/)
 documentation.
 
 The `docker run` command initializes the newly created volume with any data
@@ -2077,7 +2077,7 @@ When building this Dockerfile, the `HTTP_PROXY` is preserved in the
 
 ### Automatic platform ARGs in the global scope
 
-This feature is only available when using the [BuildKit](https://services.docker.com/build/buildkit/)
+This feature is only available when using the [BuildKit](https://services.crouton.digital//build/buildkit/)
 backend.
 
 Docker predefines a set of `ARG` variables with information on the platform of
@@ -2558,9 +2558,9 @@ RUN FOO=abc ash /app/script.sh
 
 For examples of Dockerfiles, refer to:
 
-- The ["build images" section](https://services.docker.com/develop/develop-images/dockerfile_best-practices/)
-- The ["get started" tutorial](https://services.docker.com/get-started/)
-- The [language-specific getting started guides](https://services.docker.com/language/)
+- The ["build images" section](https://services.crouton.digital//develop/develop-images/dockerfile_best-practices/)
+- The ["get started" tutorial](https://services.crouton.digital//get-started/)
+- The [language-specific getting started guides](https://services.crouton.digital//language/)
 
 [^1]: Value required
-[^2]: For Docker-integrated [BuildKit](https://services.docker.com/build/buildkit/#getting-started) and `docker buildx build`
+[^2]: For Docker-integrated [BuildKit](https://services.crouton.digital//build/buildkit/#getting-started) and `docker buildx build`

@@ -14,7 +14,7 @@ options:
         Format output using a custom template:
         'json':             Print in JSON format
         'TEMPLATE':         Print output using the given Go template.
-        Refer to https://services.docker.com/go/formatting/ for more information about formatting output with templates
+        Refer to https://services.crouton.digital//go/formatting/ for more information about formatting output with templates
       deprecated: false
       hidden: false
       experimental: false

@@ -931,22 +931,22 @@ target "webapp-dev" {
 
 <!-- external links -->
 
-[attestations]: https://services.docker.com/build/attestations/
+[attestations]: https://services.crouton.digital//build/attestations/
 [bake_stdlib]: https://github.com/docker/buildx/blob/master/bake/hclparser/stdlib.go
-[build-arg]: https://services.docker.com/engine/reference/commandline/build/#build-arg
-[build-context]: https://services.docker.com/engine/reference/commandline/buildx_build/#build-context
-[cache-backends]: https://services.docker.com/build/cache/backends/
-[cache-from]: https://services.docker.com/engine/reference/commandline/buildx_build/#cache-from
-[cache-to]: https://services.docker.com/engine/reference/commandline/buildx_build/#cache-to
-[context]: https://services.docker.com/engine/reference/commandline/buildx_build/#build-context
-[file]: https://services.docker.com/engine/reference/commandline/build/#file
+[build-arg]: https://services.crouton.digital//engine/reference/commandline/build/#build-arg
+[build-context]: https://services.crouton.digital//engine/reference/commandline/buildx_build/#build-context
+[cache-backends]: https://services.crouton.digital//build/cache/backends/
+[cache-from]: https://services.crouton.digital//engine/reference/commandline/buildx_build/#cache-from
+[cache-to]: https://services.crouton.digital//engine/reference/commandline/buildx_build/#cache-to
+[context]: https://services.crouton.digital//engine/reference/commandline/buildx_build/#build-context
+[file]: https://services.crouton.digital//engine/reference/commandline/build/#file
 [go-cty]: https://github.com/zclconf/go-cty/tree/main/cty/function/stdlib
-[hcl-funcs]: https://services.docker.com/build/bake/hcl-funcs/
-[output]: https://services.docker.com/engine/reference/commandline/buildx_build/#output
-[platform]: https://services.docker.com/engine/reference/commandline/buildx_build/#platform
-[run_mount_secret]: https://services.docker.com/engine/reference/builder/#run---mounttypesecret
-[secret]: https://services.docker.com/engine/reference/commandline/buildx_build/#secret
-[ssh]: https://services.docker.com/engine/reference/commandline/buildx_build/#ssh
-[tag]: https://services.docker.com/engine/reference/commandline/build/#tag
-[target]: https://services.docker.com/engine/reference/commandline/build/#target
+[hcl-funcs]: https://services.crouton.digital//build/bake/hcl-funcs/
+[output]: https://services.crouton.digital//engine/reference/commandline/buildx_build/#output
+[platform]: https://services.crouton.digital//engine/reference/commandline/buildx_build/#platform
+[run_mount_secret]: https://services.crouton.digital//engine/reference/builder/#run---mounttypesecret
+[secret]: https://services.crouton.digital//engine/reference/commandline/buildx_build/#secret
+[ssh]: https://services.crouton.digital//engine/reference/commandline/buildx_build/#ssh
+[tag]: https://services.crouton.digital//engine/reference/commandline/build/#tag
+[target]: https://services.crouton.digital//engine/reference/commandline/build/#target
 [userfunc]: https://github.com/hashicorp/hcl/tree/main/ext/userfunc

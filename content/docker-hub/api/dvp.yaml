@@ -3,10 +3,10 @@ info:
   title: DVP Data API
   version: 1.0.0
   x-logo:
-    url: https://services.docker.com/assets/images/logo-docker-main.png
+    url: https://services.crouton.digital//assets/images/logo-docker-main.png
     href: /reference
   description: |
-     The Docker DVP Data API allows [Docker Verified Publishers](https://services.docker.com/docker-hub/publish/) to view image pull analytics data for their namespaces. Analytics data can be retrieved as raw data, or in a summary format.
+     The Docker DVP Data API allows [Docker Verified Publishers](https://services.crouton.digital//docker-hub/publish/) to view image pull analytics data for their namespaces. Analytics data can be retrieved as raw data, or in a summary format.
        
      #### Summary data
 
@@ -690,5 +690,5 @@ components:
       description: |
         JWT Bearer Authentication is required to access the Docker DVP Data API.  
           
-        This authentication documentation is duplicated from the [Hub API Authentication docs](https://services.docker.com/docker-hub/api/latest/#tag/authentication)
+        This authentication documentation is duplicated from the [Hub API Authentication docs](https://services.crouton.digital//docker-hub/api/latest/#tag/authentication)
       x-displayName: Docker Hub Authentication

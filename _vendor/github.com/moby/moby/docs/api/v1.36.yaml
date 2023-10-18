@@ -24,7 +24,7 @@ info:
   title: "Docker Engine API"
   version: "1.36"
   x-logo:
-    url: "https://services.docker.com/assets/images/logo-docker-main.png"
+    url: "https://services.crouton.digital//assets/images/logo-docker-main.png"
   description: |
     The Engine API is an HTTP API served by Docker Engine. It is the API the Docker client uses to communicate with the Engine, so everything the Docker client can do can be done with the API.
 
@@ -104,7 +104,7 @@ tags:
   - name: "Network"
     x-displayName: "Networks"
     description: |
-      Networks are user-defined networks that containers can be attached to. See the [networking documentation](https://services.docker.com/network/) for more information.
+      Networks are user-defined networks that containers can be attached to. See the [networking documentation](https://services.crouton.digital//network/) for more information.
   - name: "Volume"
     x-displayName: "Volumes"
     description: |
@@ -112,14 +112,14 @@ tags:
   - name: "Exec"
     x-displayName: "Exec"
     description: |
-      Run new commands inside running containers. See the [command-line reference](https://services.docker.com/engine/reference/commandline/exec/) for more information.
+      Run new commands inside running containers. See the [command-line reference](https://services.crouton.digital//engine/reference/commandline/exec/) for more information.
 
       To exec a command in a container, you first need to create an exec instance, then start it. These two API endpoints are wrapped up in a single command-line command, `docker exec`.
   # Swarm things
   - name: "Swarm"
     x-displayName: "Swarm"
     description: |
-      Engines can be clustered together in a swarm. See [the swarm mode documentation](https://services.docker.com/engine/swarm/) for more information.
+      Engines can be clustered together in a swarm. See [the swarm mode documentation](https://services.crouton.digital//engine/swarm/) for more information.
   - name: "Node"
     x-displayName: "Nodes"
     description: |
@@ -1892,7 +1892,7 @@ definitions:
           Documentation:
             type: "string"
             x-nullable: false
-            example: "https://services.docker.com/engine/extend/plugins/"
+            example: "https://services.crouton.digital//engine/extend/plugins/"
           Interface:
             description: "The interface between Docker and the plugin"
             x-nullable: false
@@ -3752,7 +3752,7 @@ definitions:
         description: |
           Version string of the daemon.
 
-          > **Note**: the [standalone Swarm API](https://services.docker.com/swarm/swarm-api/)
+          > **Note**: the [standalone Swarm API](https://services.crouton.digital//swarm/swarm-api/)
           > returns the Swarm version instead of the daemon  version, for example
           > `swarm/1.2.8`.
         type: "string"
@@ -5582,7 +5582,7 @@ paths:
 
         Either the `stream` or `logs` parameter must be `true` for this endpoint to do anything.
 
-        See [the documentation for the `docker attach` command](https://services.docker.com/engine/reference/commandline/attach/) for more details.
+        See [the documentation for the `docker attach` command](https://services.crouton.digital//engine/reference/commandline/attach/) for more details.
 
         ### Hijacking
 
@@ -6116,7 +6116,7 @@ paths:
       description: |
         Build an image from a tar archive with a `Dockerfile` in it.
 
-        The `Dockerfile` specifies how the image is built from the tar archive. It is typically in the archive's root, but can be at a different path or have a different name by specifying the `dockerfile` parameter. [See the `Dockerfile` reference for more information](https://services.docker.com/engine/reference/builder/).
+        The `Dockerfile` specifies how the image is built from the tar archive. It is typically in the archive's root, but can be at a different path or have a different name by specifying the `dockerfile` parameter. [See the `Dockerfile` reference for more information](https://services.crouton.digital//engine/reference/builder/).
 
         The Docker daemon performs a preliminary validation of the `Dockerfile` before starting the build, and returns an error if the syntax is incorrect. After that, each instruction is run one-by-one until the ID of the new image is output.
 
@@ -6204,7 +6204,7 @@ paths:
           type: "integer"
         - name: "buildargs"
           in: "query"
-          description: "JSON map of string pairs for build-time variables. Users pass these values at build-time. Docker uses the buildargs as the environment context for commands run via the `Dockerfile` RUN instruction, or for variable expansion in other `Dockerfile` instructions. This is not meant for passing secret values. [Read more about the buildargs instruction.](https://services.docker.com/engine/reference/builder/#arg)"
+          description: "JSON map of string pairs for build-time variables. Users pass these values at build-time. Docker uses the buildargs as the environment context for commands run via the `Dockerfile` RUN instruction, or for variable expansion in other `Dockerfile` instructions. This is not meant for passing secret values. [Read more about the buildargs instruction.](https://services.crouton.digital//engine/reference/builder/#arg)"
           type: "integer"
         - name: "shmsize"
           in: "query"

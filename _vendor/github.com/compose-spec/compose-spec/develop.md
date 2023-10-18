@@ -44,7 +44,7 @@ The `develop` subsection defines configuration options that are applied by Compo
 ### watch
 
 The `watch` attribute defines a list of rules that control automatic service updates based on local file changes. `watch` is a sequence, each individual item in the sequence defines a rule to be applied by 
-Compose to monitor source code for changes. For more information, see [Use Compose Watch](https://services.docker.com/compose/file-watch/).
+Compose to monitor source code for changes. For more information, see [Use Compose Watch](https://services.crouton.digital//compose/file-watch/).
 
 #### action
 

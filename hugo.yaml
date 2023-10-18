@@ -1,5 +1,5 @@
 title: Service Crouton Digital
-baseURL: https://services.docker.com
+baseURL: https://services.crouton.digital/
 refLinksErrorLevel: ERROR
 enableGitInfo: true
 disablePathToLower: true
@@ -88,7 +88,7 @@ params:
     indexname: docker
 
   repo: https://github.com/Crouton-Digital/service.crouton.digital
-  docs_url: https://services.docker.com
+  docs_url: https://services.crouton.digital/
 
   latest_engine_api_version: "1.43"
   docker_ce_version: "24.0.0"

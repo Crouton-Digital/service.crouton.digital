@@ -116,7 +116,7 @@ each `docker` command with `sudo`. To avoid having to use `sudo` with the
 `docker` and add users to it.
 
 For more information about installing Docker or `sudo` configuration, refer to
-the [installation](https://services.docker.com/install/) instructions for your operating system.
+the [installation](https://services.crouton.digital//install/) instructions for your operating system.
 
 ## Environment variables
 
@@ -136,7 +136,7 @@ line:
 | `DOCKER_HOST`                 | Daemon socket to connect to.                                                                                                                                                                                                                                 |
 | `DOCKER_TLS`                  | Enable TLS for connections made by the `docker` CLI (equivalent of the `--tls` command-line option). Set to a non-empty value to enable TLS. Note that TLS is enabled automatically if any of the other TLS options are set.                                 |
 | `DOCKER_TLS_VERIFY`           | When set Docker uses TLS and verifies the remote. This variable is used both by the `docker` CLI and the [`dockerd` daemon](dockerd.md)                                                                                                                      |
-| `BUILDKIT_PROGRESS`           | Set type of progress output (`auto`, `plain`, `tty`) when [building](build.md) with [BuildKit backend](https://services.docker.com/build/buildkit/). Use plain to show container output (default `auto`).                                                        |
+| `BUILDKIT_PROGRESS`           | Set type of progress output (`auto`, `plain`, `tty`) when [building](build.md) with [BuildKit backend](https://services.crouton.digital//build/buildkit/). Use plain to show container output (default `auto`).                                                        |
 
 Because Docker is developed using Go, you can also use any environment
 variables used by the Go runtime. In particular, you may find these useful:
@@ -270,7 +270,7 @@ be set for each environment:
 
 These settings are used to configure proxy settings for containers only, and not
 used as proxy settings for the `docker` CLI or the `dockerd` daemon. Refer to the
-[environment variables](#environment-variables) and [HTTP/HTTPS proxy](https://services.docker.com/config/daemon/systemd/#httphttps-proxy)
+[environment variables](#environment-variables) and [HTTP/HTTPS proxy](https://services.crouton.digital//config/daemon/systemd/#httphttps-proxy)
 sections for configuring proxy settings for the cli and daemon.
 
 > **Warning**
@@ -392,7 +392,7 @@ a `docker` command. You can use the following protocols:
 | `npipe://[<name>]`                     | Named pipe (Windows only) | `npipe:////./pipe/docker_engine` |
 
 If you don't specify the `-H` flag, and you're not using a custom
-[context](https://services.docker.com/engine/context/working-with-contexts),
+[context](https://services.crouton.digital//engine/context/working-with-contexts),
 commands use the following default sockets:
 
 - `unix:///var/run/docker.sock` on macOS and Linux

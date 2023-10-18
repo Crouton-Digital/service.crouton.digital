@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/Crouton-Digital/service.crouton.digital/issues"
   },
-  "homepage": "https://services.docker.com/",
+  "homepage": "https://services.crouton.digital//",
   "devDependencies": {
     "@alpinejs/collapse": "^3.11.1",
     "@docsearch/js": "^3.5.2",

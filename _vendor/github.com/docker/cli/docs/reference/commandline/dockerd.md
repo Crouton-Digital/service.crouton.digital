@@ -150,8 +150,8 @@ by the `dockerd` command line:
 
 > **Note**
 > 
-> Refer to the [Docker Desktop manual](https://services.docker.com/desktop/networking/#httphttps-proxy-support)
-> if you are running [Docker Desktop](https://services.docker.com/desktop/).
+> Refer to the [Docker Desktop manual](https://services.crouton.digital//desktop/networking/#httphttps-proxy-support)
+> if you are running [Docker Desktop](https://services.crouton.digital//desktop/).
 
 If you are behind an HTTP proxy server, for example in corporate settings,
 you may have to configure the Docker daemon to use the proxy server for
@@ -165,12 +165,12 @@ in three ways:
   options. (Docker Engine 23.0 or newer).
 
 The command-line and configuration file options take precedence over environment
-variables. Refer to [control and configure Docker with systemd](https://services.docker.com/config/daemon/systemd/#httphttps-proxy)
+variables. Refer to [control and configure Docker with systemd](https://services.crouton.digital//config/daemon/systemd/#httphttps-proxy)
 to set these environment variables on a host using `systemd`.
 
 ### Daemon socket option
 
-The Docker daemon can listen for [Docker Engine API](https://services.docker.com/engine/api/)
+The Docker daemon can listen for [Docker Engine API](https://services.crouton.digital//engine/api/)
 requests via three different types of Socket: `unix`, `tcp`, and `fd`.
 
 By default, a `unix` domain socket (or IPC socket) is created at
@@ -180,7 +180,7 @@ membership.
 If you need to access the Docker daemon remotely, you need to enable the `tcp`
 Socket. Beware that the default setup provides un-encrypted and
 un-authenticated direct access to the Docker daemon - and should be secured
-either using the [built in HTTPS encrypted socket](https://services.docker.com/engine/security/https/), or by
+either using the [built in HTTPS encrypted socket](https://services.crouton.digital//engine/security/https/), or by
 putting a secure web proxy in front of it. You can listen on port `2375` on all
 network interfaces with `-H tcp://0.0.0.0:2375`, or on a particular network
 interface using its IP address: `-H tcp://192.168.59.103:2375`. It is
@@ -329,7 +329,7 @@ drivers: `overlay2`, `fuse-overlayfs`, `btrfs`, `zfs`, and `devicemapper`.
 and is selected by default. Unless users have a strong reason to prefer another storage driver,
 `overlay2` should be used.
 
-You can find out more about storage drivers and how to select one in [Select a storage driver](https://services.docker.com/storage/storagedriver/select-storage-driver/).
+You can find out more about storage drivers and how to select one in [Select a storage driver](https://services.crouton.digital//storage/storagedriver/select-storage-driver/).
 
 On Windows, the Docker daemon only supports the `windowsfilter` storage driver.
 
@@ -854,7 +854,7 @@ installed outside of `PATH`, must be registered with the daemon, either via the
 configuration file or using the `--add-runtime` command line flag.
 
 For examples on how to use other container runtimes, see
-[Alternative container runtimes](https://services.docker.com/engine/alternative-runtimes/)
+[Alternative container runtimes](https://services.crouton.digital//engine/alternative-runtimes/)
 
 ##### Configure runtimes using `daemon.json`
 
@@ -1039,7 +1039,7 @@ $ sudo dockerd --add-runtime <runtime>=<path>
 Defining runtime arguments via the command line is not supported.
 
 For an example configuration for a runc drop-in replacment, see
-[Alternative container runtimes > youki](https://services.docker.com/engine/alternative-runtimes/#youki)
+[Alternative container runtimes > youki](https://services.crouton.digital//engine/alternative-runtimes/#youki)
 
 ##### Configure the default container runtime
 
@@ -1263,7 +1263,7 @@ inside the container but will effectively be mapped to an unprivileged `uid` on
 the host.
 
 For details about how to use this feature, as well as limitations, see
-[Isolate containers with a user namespace](https://services.docker.com/engine/security/userns-remap/).
+[Isolate containers with a user namespace](https://services.crouton.digital//engine/security/userns-remap/).
 
 ### Configure host gateway IP
 
@@ -1545,7 +1545,7 @@ This is a full example of the allowed configuration options on Linux:
 > daemon startup as a flag.
 > On systems that use `systemd` to start the Docker daemon, `-H` is already set, so
 > you cannot use the `hosts` key in `daemon.json` to add listening addresses.
-> See ["custom Docker daemon options"](https://services.docker.com/config/daemon/systemd/#custom-docker-daemon-options) for how
+> See ["custom Docker daemon options"](https://services.crouton.digital//config/daemon/systemd/#custom-docker-daemon-options) for how
 > to accomplish this task with a systemd drop-in file.
 
 ##### On Windows
@@ -1629,7 +1629,7 @@ The list of currently supported options that can be reconfigured is this:
 
 - `debug`: it changes the daemon to debug mode when set to true.
 - `labels`: it replaces the daemon labels with a new set of labels.
-- `live-restore`: Enables [keeping containers alive during daemon downtime](https://services.docker.com/config/containers/live-restore/).
+- `live-restore`: Enables [keeping containers alive during daemon downtime](https://services.crouton.digital//config/containers/live-restore/).
 - `max-concurrent-downloads`: it updates the max concurrent downloads for each pull.
 - `max-concurrent-uploads`: it updates the max concurrent uploads for each push.
 - `max-download-attempts`: it updates the max download attempts for each pull.

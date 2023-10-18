@@ -178,7 +178,7 @@ The following is the updated `compose.yaml` file.
 ```yaml
 # Comments are provided throughout this file to help you get started.
 # If you need more help, visit the Docker compose reference guide at
-# https://services.docker.com/compose/compose-file/
+# https://services.crouton.digital//compose/compose-file/
 
 # Here the instructions define your application as a service called "server".
 # This service is built from the Dockerfile in the current directory.

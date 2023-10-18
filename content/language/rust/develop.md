@@ -103,7 +103,7 @@ For the sample application, you'll use a variation of the backend from the react
 
    # Comments are provided throughout this file to help you get started.
    # If you need more help, visit the Dockerfile reference guide at
-   # https://services.docker.com/engine/reference/builder/
+   # https://services.crouton.digital//engine/reference/builder/
    
    ################################################################################
    # Create a stage for building the application.
@@ -147,7 +147,7 @@ For the sample application, you'll use a variation of the backend from the react
    FROM debian:bullseye-slim AS final
    
    # Create a non-privileged user that the app will run under.
-   # See https://services.docker.com/develop/develop-images/dockerfile_best-practices/   #user
+   # See https://services.crouton.digital//develop/develop-images/dockerfile_best-practices/   #user
    ARG UID=10001
    RUN adduser \
        --disabled-password \
@@ -221,7 +221,7 @@ The following is the updated `compose.yaml` file.
 ```yaml
 # Comments are provided throughout this file to help you get started.
 # If you need more help, visit the Docker compose reference guide at
-# https://services.docker.com/compose/compose-file/
+# https://services.crouton.digital//compose/compose-file/
 
 # Here the instructions define your application as a service called "server".
 # This service is built from the Dockerfile in the current directory.

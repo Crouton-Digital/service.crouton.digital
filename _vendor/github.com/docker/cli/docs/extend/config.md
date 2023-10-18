@@ -67,11 +67,11 @@ Config provides the base accessible fields for working with V0 plugin format
 
 - **`entrypoint`** *string array*
 
-   entrypoint of the plugin, see [`ENTRYPOINT`](https://services.docker.com/engine/reference/builder/#entrypoint)
+   entrypoint of the plugin, see [`ENTRYPOINT`](https://services.crouton.digital//engine/reference/builder/#entrypoint)
 
 - **`workdir`** *string*
 
-   workdir of the plugin, see [`WORKDIR`](https://services.docker.com/engine/reference/builder/#workdir)
+   workdir of the plugin, see [`WORKDIR`](https://services.crouton.digital//engine/reference/builder/#workdir)
 
 - **`network`** *PluginNetwork*
 
@@ -197,7 +197,7 @@ Config provides the base accessible fields for working with V0 plugin format
     "Value": null
   },
   "Description": "A sample volume plugin for Docker",
-  "Documentation": "https://services.docker.com/engine/extend/plugins/",
+  "Documentation": "https://services.crouton.digital//engine/extend/plugins/",
   "Entrypoint": [
     "/usr/bin/sample-volume-plugin",
     "/data"

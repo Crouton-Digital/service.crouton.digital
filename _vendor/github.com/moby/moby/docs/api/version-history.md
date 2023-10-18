@@ -15,7 +15,7 @@ keywords: "API, Docker, rcli, REST, documentation"
 
 ## v1.43 API changes
 
-[Docker Engine API v1.43](https://services.docker.com/engine/api/v1.43/) documentation
+[Docker Engine API v1.43](https://services.crouton.digital//engine/api/v1.43/) documentation
 
 * `POST /containers/create` now accepts `Annotations` as part of `HostConfig`.
   Can be used to attach arbitrary metadata to the container, which will also be
@@ -32,7 +32,7 @@ keywords: "API, Docker, rcli, REST, documentation"
 
 ## v1.42 API changes
 
-[Docker Engine API v1.42](https://services.docker.com/engine/api/v1.42/) documentation
+[Docker Engine API v1.42](https://services.crouton.digital//engine/api/v1.42/) documentation
 
 * Removed the `BuilderSize` field on the `GET /system/df` endpoint. This field
   was introduced in API 1.31 as part of an experimental feature, and no longer
@@ -140,7 +140,7 @@ keywords: "API, Docker, rcli, REST, documentation"
 
 ## v1.41 API changes
 
-[Docker Engine API v1.41](https://services.docker.com/engine/api/v1.41/) documentation
+[Docker Engine API v1.41](https://services.crouton.digital//engine/api/v1.41/) documentation
 
 * `GET /events` now returns `prune` events after pruning resources have completed.
   Prune events are returned for `container`, `network`, `volume`, `image`, and
@@ -228,7 +228,7 @@ keywords: "API, Docker, rcli, REST, documentation"
 
 ## v1.40 API changes
 
-[Docker Engine API v1.40](https://services.docker.com/engine/api/v1.40/) documentation
+[Docker Engine API v1.40](https://services.crouton.digital//engine/api/v1.40/) documentation
 
 * The `/_ping` endpoint can now be accessed both using `GET` or `HEAD` requests.
   when accessed using a `HEAD` request, all headers are returned, but the body
@@ -295,7 +295,7 @@ keywords: "API, Docker, rcli, REST, documentation"
 
 ## V1.39 API changes
 
-[Docker Engine API v1.39](https://services.docker.com/engine/api/v1.39/) documentation
+[Docker Engine API v1.39](https://services.crouton.digital//engine/api/v1.39/) documentation
 
 * `GET /info` now returns an empty string, instead of `<unknown>` for `KernelVersion`
   and `OperatingSystem` if the daemon was unable to obtain this information.
@@ -312,7 +312,7 @@ keywords: "API, Docker, rcli, REST, documentation"
 
 ## V1.38 API changes
 
-[Docker Engine API v1.38](https://services.docker.com/engine/api/v1.38/) documentation
+[Docker Engine API v1.38](https://services.crouton.digital//engine/api/v1.38/) documentation
 
 
 * `GET /tasks` and `GET /tasks/{id}` now return a `NetworkAttachmentSpec` field,
@@ -321,7 +321,7 @@ keywords: "API, Docker, rcli, REST, documentation"
 
 ## v1.37 API changes
 
-[Docker Engine API v1.37](https://services.docker.com/engine/api/v1.37/) documentation
+[Docker Engine API v1.37](https://services.crouton.digital//engine/api/v1.37/) documentation
 
 * `POST /containers/create` and `POST /services/create` now supports exposing SCTP ports.
 * `POST /configs/create` and `POST /configs/{id}/create` now accept a `Templating` driver.
@@ -331,14 +331,14 @@ keywords: "API, Docker, rcli, REST, documentation"
 
 ## v1.36 API changes
 
-[Docker Engine API v1.36](https://services.docker.com/engine/api/v1.36/) documentation
+[Docker Engine API v1.36](https://services.crouton.digital//engine/api/v1.36/) documentation
 
 * `Get /events` now return `exec_die` event when an exec process terminates.  
 
 
 ## v1.35 API changes
 
-[Docker Engine API v1.35](https://services.docker.com/engine/api/v1.35/) documentation
+[Docker Engine API v1.35](https://services.crouton.digital//engine/api/v1.35/) documentation
 
 * `POST /services/create` and `POST /services/(id)/update` now accepts an
   `Isolation` field on container spec to set the Isolation technology of the
@@ -361,7 +361,7 @@ keywords: "API, Docker, rcli, REST, documentation"
 
 ## v1.34 API changes
 
-[Docker Engine API v1.34](https://services.docker.com/engine/api/v1.34/) documentation
+[Docker Engine API v1.34](https://services.crouton.digital//engine/api/v1.34/) documentation
 
 * `POST /containers/(name)/wait?condition=removed` now also also returns
   in case of container removal failure. A pointer to a structure named
@@ -372,14 +372,14 @@ keywords: "API, Docker, rcli, REST, documentation"
 
 ## v1.33 API changes
 
-[Docker Engine API v1.33](https://services.docker.com/engine/api/v1.33/) documentation
+[Docker Engine API v1.33](https://services.crouton.digital//engine/api/v1.33/) documentation
 
 * `GET /events` now supports filtering 4 more kinds of events: `config`, `node`,
 `secret` and `service`.
 
 ## v1.32 API changes
 
-[Docker Engine API v1.32](https://services.docker.com/engine/api/v1.32/) documentation
+[Docker Engine API v1.32](https://services.crouton.digital//engine/api/v1.32/) documentation
 
 * `POST /images/create` now accepts a `platform` parameter in the form of `os[/arch[/variant]]`.
 * `POST /containers/create` now accepts additional values for the
@@ -393,7 +393,7 @@ keywords: "API, Docker, rcli, REST, documentation"
 
 ## v1.31 API changes
 
-[Docker Engine API v1.31](https://services.docker.com/engine/api/v1.31/) documentation
+[Docker Engine API v1.31](https://services.crouton.digital//engine/api/v1.31/) documentation
 
 * `DELETE /secrets/(name)` now returns status code 404 instead of 500 when the secret does not exist.
 * `POST /secrets/create` now returns status code 409 instead of 500 when creating an already existing secret.
@@ -424,7 +424,7 @@ keywords: "API, Docker, rcli, REST, documentation"
 
 ## v1.30 API changes
 
-[Docker Engine API v1.30](https://services.docker.com/engine/api/v1.30/) documentation
+[Docker Engine API v1.30](https://services.crouton.digital//engine/api/v1.30/) documentation
 
 * `GET /info` now returns the list of supported logging drivers, including plugins.
 * `GET /info` and `GET /swarm` now returns the cluster-wide swarm CA info if the node is in a swarm: the cluster root CA certificate, and the cluster TLS
@@ -447,7 +447,7 @@ keywords: "API, Docker, rcli, REST, documentation"
 
 ## v1.29 API changes
 
-[Docker Engine API v1.29](https://services.docker.com/engine/api/v1.29/) documentation
+[Docker Engine API v1.29](https://services.crouton.digital//engine/api/v1.29/) documentation
 
 * `DELETE /networks/(name)` now allows to remove the ingress network, the one used to provide the routing-mesh.
 * `POST /networks/create` now supports creating the ingress network, by specifying an `Ingress` boolean field. As of now this is supported only when using the overlay network driver.
@@ -461,7 +461,7 @@ keywords: "API, Docker, rcli, REST, documentation"
 
 ## v1.28 API changes
 
-[Docker Engine API v1.28](https://services.docker.com/engine/api/v1.28/) documentation
+[Docker Engine API v1.28](https://services.crouton.digital//engine/api/v1.28/) documentation
 
 * `POST /containers/create` now includes a `Consistency` field to specify the consistency level for each `Mount`, with possible values `default`, `consistent`, `cached`, or `delegated`.
 * `GET /containers/create` now takes a `DeviceCgroupRules` field in `HostConfig` allowing to set custom device cgroup rules for the created container.
@@ -479,19 +479,19 @@ keywords: "API, Docker, rcli, REST, documentation"
 
 ## v1.27 API changes
 
-[Docker Engine API v1.27](https://services.docker.com/engine/api/v1.27/) documentation
+[Docker Engine API v1.27](https://services.crouton.digital//engine/api/v1.27/) documentation
 
 * `GET /containers/(id or name)/stats` now includes an `online_cpus` field in both `precpu_stats` and `cpu_stats`. If this field is `nil` then for compatibility with older daemons the length of the corresponding `cpu_usage.percpu_usage` array should be used.
 
 ## v1.26 API changes
 
-[Docker Engine API v1.26](https://services.docker.com/engine/api/v1.26/) documentation
+[Docker Engine API v1.26](https://services.crouton.digital//engine/api/v1.26/) documentation
 
 * `POST /plugins/(plugin name)/upgrade` upgrade a plugin.
 
 ## v1.25 API changes
 
-[Docker Engine API v1.25](https://services.docker.com/engine/api/v1.25/) documentation
+[Docker Engine API v1.25](https://services.crouton.digital//engine/api/v1.25/) documentation
 
 * The API version is now required in all API calls. Instead of just requesting, for example, the URL `/containers/json`, you must now request `/v1.25/containers/json`.
 * `GET /version` now returns `MinAPIVersion`.

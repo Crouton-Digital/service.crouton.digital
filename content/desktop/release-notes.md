@@ -125,7 +125,7 @@ For frequently asked questions about Docker Desktop releases, see [FAQs](faqs/re
 
 ### Upgrades
 - [Compose v2.21.0](https://github.com/docker/compose/releases/tag/v2.21.0)
-- [Docker Engine v24.0.6](https://services.docker.com/engine/release-notes/24.0/#2406)
+- [Docker Engine v24.0.6](https://services.crouton.digital//engine/release-notes/24.0/#2406)
 - [Docker Scout CLI v0.24.1](https://github.com/docker/scout-cli/releases/tag/v0.24.1).
 - [Wasm](../desktop/wasm/_index.md) runtimes:
   - wasmtime, wasmedge revision `d0a1a1cd`.
@@ -210,7 +210,7 @@ For frequently asked questions about Docker Desktop releases, see [FAQs](faqs/re
 
 - [Buildx v0.11.2](https://github.com/docker/buildx/releases/tag/v0.11.2)
 - [Compose v2.20.2](https://github.com/docker/compose/releases/tag/v2.20.2)
-- [Docker Engine v24.0.5](https://services.docker.com/engine/release-notes/24.0/#2405)
+- [Docker Engine v24.0.5](https://services.crouton.digital//engine/release-notes/24.0/#2405)
 
 > **Note**
 >
@@ -347,7 +347,7 @@ For frequently asked questions about Docker Desktop releases, see [FAQs](faqs/re
 
 - [Buildx v0.10.5](https://github.com/docker/buildx/releases/tag/v0.10.5)
 - [Compose v2.18.1](https://github.com/docker/compose/releases/tag/v2.18.1)
-- [Docker Engine v24.0.2](https://services.docker.com/engine/release-notes/24.0/#2402)
+- [Docker Engine v24.0.2](https://services.crouton.digital//engine/release-notes/24.0/#2402)
 - [Containerd v1.6.21](https://github.com/containerd/containerd/releases/tag/v1.6.21)
 - [runc v1.1.7](https://github.com/opencontainers/runc/releases/tag/v1.1.5)
 
@@ -355,9 +355,9 @@ For frequently asked questions about Docker Desktop releases, see [FAQs](faqs/re
 
 #### For all platforms
 
-- [Docker Scout CLI](https://services.docker.com/scout/#docker-scout-cli) now finds the most recently built image if it is not provided as an argument.
-- Improved the [Docker Scout CLI](https://services.docker.com/scout/#docker-scout-cli) `compare` command.
-- Added a warning about the [retirement of Docker Compose ECS/ACS integrations in November 2023](https://services.docker.com/go/compose-ecs-eol/). Can be suppressed with `COMPOSE_CLOUD_EOL_SILENT=1`.
+- [Docker Scout CLI](https://services.crouton.digital//scout/#docker-scout-cli) now finds the most recently built image if it is not provided as an argument.
+- Improved the [Docker Scout CLI](https://services.crouton.digital//scout/#docker-scout-cli) `compare` command.
+- Added a warning about the [retirement of Docker Compose ECS/ACS integrations in November 2023](https://services.crouton.digital//go/compose-ecs-eol/). Can be suppressed with `COMPOSE_CLOUD_EOL_SILENT=1`.
 - Fixed an HTTP proxy bug where an HTTP 1.0 client could receive an HTTP 1.1 response.
 - Enabled Docker Desktop's Enhanced Container Isolation (ECI) feature on WSL-2. This is available with a Docker Business subscription.
 - Fixed a bug on the **Containers** table where previously hidden columns were displayed again after a fresh installation of Docker Desktop.
@@ -399,7 +399,7 @@ For frequently asked questions about Docker Desktop releases, see [FAQs](faqs/re
 
 ### Upgrades
 
-- [Docker Engine v23.0.5](https://services.docker.com/engine/release-notes/23.0/#2305)
+- [Docker Engine v23.0.5](https://services.crouton.digital//engine/release-notes/23.0/#2305)
 - [Compose 2.17.3](https://github.com/docker/compose/releases/tag/v2.17.3)
 - [Containerd v1.6.20](https://github.com/containerd/containerd/releases/tag/v1.6.20)
 - [Kubernetes v1.25.9](https://github.com/kubernetes/kubernetes/releases/tag/v1.25.9)
@@ -468,7 +468,7 @@ For frequently asked questions about Docker Desktop releases, see [FAQs](faqs/re
 - [Buildx v0.10.4](https://github.com/docker/buildx/releases/tag/v0.10.4)
 - [Compose 2.17.2](https://github.com/docker/compose/releases/tag/v2.17.2)
 - [Containerd v1.6.18](https://github.com/containerd/containerd/releases/tag/v1.6.18), which includes fixes for [CVE-2023-25153](https://github.com/advisories/GHSA-259w-8hf6-59c2) and [CVE-2023-25173](https://github.com/advisories/GHSA-hmfx-3pcx-653p).
-- [Docker Engine v20.10.24](https://services.docker.com/engine/release-notes/20.10/#201024), which contains fixes for [CVE-2023-28841](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28841),
+- [Docker Engine v20.10.24](https://services.crouton.digital//engine/release-notes/20.10/#201024), which contains fixes for [CVE-2023-28841](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28841),
   [CVE-2023-28840](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28840), and
   [CVE-2023-28842](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28842).
 
@@ -491,12 +491,12 @@ For frequently asked questions about Docker Desktop releases, see [FAQs](faqs/re
 - Fixed a bug where `docker run --gpus=all` hangs. Fixes [docker/for-win#13324](https://github.com/docker/for-win/issues/13324).
 - Fixed a bug where Registry Access Management policy updates were not downloaded.
 - Docker Desktop now allows Windows containers to work when BitLocker is enabled on `C:`.
-- Docker Desktop with the WSL backend no longer requires the `com.docker.service` privileged service to run permanently. For more information see [Permission requirements for Windows](https://services.docker.com/desktop/windows/permission-requirements/).
+- Docker Desktop with the WSL backend no longer requires the `com.docker.service` privileged service to run permanently. For more information see [Permission requirements for Windows](https://services.crouton.digital//desktop/windows/permission-requirements/).
 
 ### For Mac
 
 - Fixed a performance issue where attributes stored on the host would not be cached for VirtioFS users.
-- The first time Docker Desktop for Mac is launched, the user is presented with an installation window to confirm or adjust the configuration that requires privileged access. For more information see [Permission requirements for Mac](https://services.docker.com/desktop/mac/permission-requirements/).
+- The first time Docker Desktop for Mac is launched, the user is presented with an installation window to confirm or adjust the configuration that requires privileged access. For more information see [Permission requirements for Mac](https://services.crouton.digital//desktop/mac/permission-requirements/).
 - Added the **Advanced** tab in **Settings**, where users can adjust the settings which require privileged access.
 
 ### For Linux
@@ -549,7 +549,7 @@ For frequently asked questions about Docker Desktop releases, see [FAQs](faqs/re
 ### Upgrades
 
 - [Containerd v1.6.18](https://github.com/containerd/containerd/releases/tag/v1.6.18), which includes fixes for [CVE-2023-25153](https://github.com/advisories/GHSA-259w-8hf6-59c2) and [CVE-2023-25173](https://github.com/advisories/GHSA-hmfx-3pcx-653p).
-- [Docker Engine v20.10.23](https://services.docker.com/engine/release-notes/20.10/#201023).
+- [Docker Engine v20.10.23](https://services.crouton.digital//engine/release-notes/20.10/#201023).
 - [Go 1.19.5](https://github.com/golang/go/releases/tag/go1.19.5)
 
 ### Bug fixes and enhancements
@@ -670,7 +670,7 @@ For frequently asked questions about Docker Desktop releases, see [FAQs](faqs/re
 
 - [Compose v2.15.1](https://github.com/docker/compose/releases/tag/v2.15.1)
 - [Containerd v1.6.14](https://github.com/containerd/containerd/releases/tag/v1.6.14)
-- [Docker Engine v20.10.22](https://services.docker.com/engine/release-notes/20.10/#201022)
+- [Docker Engine v20.10.22](https://services.crouton.digital//engine/release-notes/20.10/#201022)
 - [Buildx v0.10.0](https://github.com/docker/buildx/releases/tag/v0.10.0)
 - [Docker Scan v0.23.0](https://github.com/docker/scan-cli-plugin/releases/tag/v0.23.0)
 - [Go 1.19.4](https://github.com/golang/go/releases/tag/go1.19.4)
@@ -722,7 +722,7 @@ For frequently asked questions about Docker Desktop releases, see [FAQs](faqs/re
 ### New
 
 - Substantial performance improvements for macOS users with the option of enabling the new VirtioFS file sharing technology. Available for macOS 12.5 and above.
-- Docker Desktop for Mac no longer needs to install the privileged helper process `com.docker.vmnetd` on install or on the first run. For more information see [Permission requirements for Mac](https://services.docker.com/desktop/mac/permission-requirements/).
+- Docker Desktop for Mac no longer needs to install the privileged helper process `com.docker.vmnetd` on install or on the first run. For more information see [Permission requirements for Mac](https://services.crouton.digital//desktop/mac/permission-requirements/).
 - Added [WebAssembly capabilities](wasm/index.md). Use with the [containerd integration](containerd/index.md).
 - Improved the descriptions for beta and experimental settings to clearly explain the differences and how people can access them.
 - Available disk space of VM now displays in the footer of Docker Dashboard for Mac and Linux.

@@ -3,7 +3,7 @@ variable "HUGO_ENV" {
 }
 
 variable "DOCS_URL" {
-  default = "https://services.docker.com"
+  default = "https://services.crouton.digital/"
 }
 
 variable "DOCS_SITE_DIR" {

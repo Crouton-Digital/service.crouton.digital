@@ -63,7 +63,7 @@ a Docker Compose project, creates the container from the `image` option of the `
 attaches it to the Compose project. See the [ui metadata section](./metadata.md#vm-section) for more details.
 
 In some cases, a `compose.yml` file can be used instead of an `image`. This is useful when the backend container
-needs more specific options, such as mounting volumes or requesting [capabilities](https://services.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities)
+needs more specific options, such as mounting volumes or requesting [capabilities](https://services.crouton.digital//engine/reference/run/#runtime-privilege-and-linux-capabilities)
 that can't be expressed just with a Docker image. The `compose.yml` file can also be used to add multiple containers
 needed by the extension, like a database or a message broker. 
 Note that, if the Compose file defines many services, the SDK can only contact the first of them.

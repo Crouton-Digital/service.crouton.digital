@@ -35,7 +35,7 @@ recommend looking for an alternative image or rebuilding it.
 You can rebuild the image by updating the `FROM` statement in your
 `Dockerfile`. If your image manifest is out-of-date, there is a chance the
 image pulled from your `FROM` statement in your `Dockerfile` is also
-out-of-date. See the [Dockerfile reference](https://services.docker.com/engine/reference/builder/#from)
-and the [Dockerfile best practices guide](https://services.docker.com/develop/develop-images/dockerfile_best-practices/)
+out-of-date. See the [Dockerfile reference](https://services.crouton.digital//engine/reference/builder/#from)
+and the [Dockerfile best practices guide](https://services.crouton.digital//develop/develop-images/dockerfile_best-practices/)
 for more information on how to update the `FROM` statement in your
 `Dockerfile`.

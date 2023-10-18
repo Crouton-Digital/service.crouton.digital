@@ -142,7 +142,7 @@ You need to download Docker Desktop to build, push, and pull container images.
      https://hub.docker.com/
 
     For more examples and ideas, visit:
-     https://services.docker.com/get-started/
+     https://services.crouton.digital//get-started/
     ```
 
 ### Step 5: Build and push a container image to Docker Hub from your computer

@@ -184,7 +184,7 @@ cgroup_parent: m-executor-abcd
 command: bundle exec thin -p 3000
 ```
 
-The value can also be a list, in a manner similar to [Dockerfile](https://services.docker.com/engine/reference/builder/#cmd):
+The value can also be a list, in a manner similar to [Dockerfile](https://services.crouton.digital//engine/reference/builder/#cmd):
 
 ```yaml
 command: [ "bundle", "exec", "thin", "-p", "3000" ]
@@ -503,7 +503,7 @@ entrypoint: /code/entrypoint.sh
 ```
 
 Alternatively, the value can also be a list, in a manner similar to the
-[Dockerfile](https://services.docker.com/engine/reference/builder/#cmd):
+[Dockerfile](https://services.crouton.digital//engine/reference/builder/#cmd):
 
 ```yml
 entrypoint:
@@ -897,7 +897,7 @@ been the case if `group_add` were not declared.
 ### healthcheck
 
 `healthcheck` declares a check that's run to determine whether or not the service containers are "healthy". It works in the same way, and has the same default values, as the
-[HEALTHCHECK Dockerfile instruction](https://services.docker.com/engine/reference/builder/#healthcheck)
+[HEALTHCHECK Dockerfile instruction](https://services.crouton.digital//engine/reference/builder/#healthcheck)
 set by the service's Docker image. Your Compose file can override the values set in the Dockerfile. 
 
 ```yml
@@ -1611,7 +1611,7 @@ sysctls:
 You can only use sysctls that are namespaced in the kernel. Docker does not
 support changing sysctls inside a container that also modify the host system.
 For an overview of supported sysctls, refer to [configure namespaced kernel
-parameters (sysctls) at runtime](https://services.docker.com/engine/reference/commandline/run/#sysctl).
+parameters (sysctls) at runtime](https://services.crouton.digital//engine/reference/commandline/run/#sysctl).
 
 ### tmpfs
 

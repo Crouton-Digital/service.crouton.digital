@@ -51,7 +51,7 @@ The parameters for this shortcode are:
 {{< card
   title="Get your Docker on"
   icon=favorite
-  link=https://services.docker.com/
+  link=https://services.crouton.digital//
   description="Build, share, and run your apps with Docker" >}}
 
 ## Markup
@@ -60,7 +60,7 @@ The parameters for this shortcode are:
 {{</* card
   title="Get your Docker on"
   icon=favorite
-  link=https://services.docker.com/
+  link=https://services.crouton.digital//
   description="Build, share, and run your apps with Docker"
 */>}}
 ```

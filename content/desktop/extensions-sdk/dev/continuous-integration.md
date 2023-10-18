@@ -8,7 +8,7 @@ In order to help validate your extension and ensure it's functional, the Extensi
 
 > **Important**
 >
-> The [Docker Desktop Action](https://github.com/docker/desktop-action) and the [extension-test-helper library](https://www.npmjs.com/package/@docker/extension-test-helper) are both [experimental](https://services.docker.com/release-lifecycle/#experimental).
+> The [Docker Desktop Action](https://github.com/docker/desktop-action) and the [extension-test-helper library](https://www.npmjs.com/package/@docker/extension-test-helper) are both [experimental](https://services.crouton.digital//release-lifecycle/#experimental).
 { .important }
 
 ## Setup CI environment with GitHub Actions

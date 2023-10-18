@@ -31,7 +31,7 @@ The basic `docker run` command takes this form:
 
     $ docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
 
-The `docker run` command must specify an [*IMAGE*](https://services.docker.com/glossary/#image)
+The `docker run` command must specify an [*IMAGE*](https://services.crouton.digital//glossary/#image)
 to derive the container from. An image developer can define image
 defaults related to:
 
@@ -1424,12 +1424,12 @@ container's logging driver. The following options are supported:
 
 The `docker logs` command is available only for the `json-file` and `journald`
 logging drivers.  For detailed information on working with logging drivers, see
-[Configure logging drivers](https://services.docker.com/config/containers/logging/configure/).
+[Configure logging drivers](https://services.crouton.digital//config/containers/logging/configure/).
 
 
 ## Overriding Dockerfile image defaults
 
-When a developer builds an image from a [*Dockerfile*](https://services.docker.com/engine/reference/builder/)
+When a developer builds an image from a [*Dockerfile*](https://services.crouton.digital//engine/reference/builder/)
 or when committing it, the developer can set a number of default parameters
 that take effect when the image starts up as a container.
 
@@ -1559,7 +1559,7 @@ If the operator uses `--link` when starting a new client container in the
 default bridge network, then the client container can access the exposed
 port via a private networking interface.
 If `--link` is used when starting a container in a user-defined network as
-described in [*Networking overview*](https://services.docker.com/network/),
+described in [*Networking overview*](https://services.crouton.digital//network/),
 it will provide a named alias for the container being linked to.
 
 ### ENV (environment variables)
@@ -1738,7 +1738,7 @@ $ docker run -d --tmpfs /run:rw,noexec,nosuid,size=65536k my_image
 > a volume.
 
 The volumes commands are complex enough to have their own documentation
-in section [*Use volumes*](https://services.docker.com/storage/volumes/). A developer can define
+in section [*Use volumes*](https://services.crouton.digital//storage/volumes/). A developer can define
 one or more `VOLUME`'s associated with an image, but only the operator
 can give access from one container to another (or from a container to a
 volume mounted on the host).

@@ -13,7 +13,7 @@ The live docs are published from the `main` branch. Therefore, you must create p
 
 There are two ways to contribute a pull request to the docs repository:
 
-1. You can select the **Edit this page** option in the right column of every page on [https://services.docker.com/](/).
+1. You can select the **Edit this page** option in the right column of every page on [https://services.crouton.digital//](/).
 
     This opens the GitHub editor, which means you don't need to know a lot about Git, or even about Markdown. When you save, GitHub prompts you to create a fork if you don't already have one, and to create a branch in your fork and submit the pull request.
 
@@ -22,7 +22,7 @@ There are two ways to contribute a pull request to the docs repository:
 
     This is the manual, more advanced version of selecting 'Edit this page' on a published docs page. Initiating a docs change in a PR from your own branch gives you more flexibility, as you can submit changes to multiple pages or files under a single pull request, and even create new topics.
 
-    For a demo of the components, tags, Markdown syntax, styles, etc. used in [https://services.docker.com/](/), see the components section.
+    For a demo of the components, tags, Markdown syntax, styles, etc. used in [https://services.crouton.digital//](/), see the components section.
 
 ## Important files
 

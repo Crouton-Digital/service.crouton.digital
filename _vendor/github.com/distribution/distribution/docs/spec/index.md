@@ -7,6 +7,6 @@ keywords: registry, service, images, repository,  json
 # Docker Registry Reference
 
 * [HTTP API V2](api.md)
-* [Storage Driver](https://services.docker.com/registry/storage-drivers/)
+* [Storage Driver](https://services.crouton.digital//registry/storage-drivers/)
 * [Token Authentication Specification](auth/token.md)
 * [Token Authentication Implementation](auth/jwt.md)

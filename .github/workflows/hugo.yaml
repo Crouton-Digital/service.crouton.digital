@@ -67,7 +67,7 @@ jobs:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
-        run: /home/runner/work/service.crouton.digital/service.crouton.digital/node_modules/.bin/hugo-algolia -o public/my-index.json
+        run: pwd && /home/runner/work/service.crouton.digital/service.crouton.digital/node_modules/.bin/hugo-algolia --s config.yaml o public/my-index.json
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

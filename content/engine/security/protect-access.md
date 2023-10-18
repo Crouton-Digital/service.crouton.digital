@@ -119,7 +119,7 @@ If you enter '.', the field will be left blank.
 Country Name (2 letter code) [AU]:
 State or Province Name (full name) [Some-State]:Queensland
 Locality Name (eg, city) []:Brisbane
-Organization Name (eg, company) [Internet Widgits Pty Ltd]:Docker Inc
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:ECNG LLC
 Organizational Unit Name (eg, section) []:Sales
 Common Name (e.g. server FQDN or YOUR name) []:$HOST
 Email Address []:Sven@home.org.au

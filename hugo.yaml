@@ -83,9 +83,9 @@ params:
     google: GTM-WL2QLG5
     onetrust: 8e0ebfd9-035d-4ec2-9b2f-a2de9c09f906
   algolia:
-    appid: 3XRLW0LZH9
-    apikey: 2899036ce47dba191b8dc1758e4bc6a4
-    indexname: docker
+    appid: L22VPDDY7O
+    apikey: 5c1133652dd08b3c3a5c681263b77848
+    indexname: services
 
   repo: https://github.com/Crouton-Digital/service.crouton.digital
   docs_url: https://services.crouton.digital/

@@ -234,16 +234,16 @@ module:
       target: assets
     - source: hugo_stats.json
       target: assets/watching/hugo_stats.json
-#  imports:
-#
-#    - path: github.com/moby/moby
-#      mounts:
-#        - source: docs/api
-#          target: content/engine/api
-#          includeFiles: "*.md"
-#        - source: docs/api
-#          target: static/reference/engine
-#          includeFiles: "*.yaml"
+  imports:
+
+    - path: github.com/moby/moby
+      mounts:
+        - source: docs/api
+          target: content/engine/api
+          includeFiles: "*.md"
+        - source: docs/api
+          target: static/reference/engine
+          includeFiles: "*.yaml"
 #
 #    - path: github.com/moby/buildkit
 #      mounts:
@@ -347,8 +347,8 @@ module:
 #      - source: develop.md
 #        target: content/compose/compose-file/develop.md
 
-    - path: github.com/docker/compose/v2
-      mounts:
-        - source: docs/reference
-          target: data/compose-cli
-          includeFiles: "*.yaml"
+#    - path: github.com/docker/compose/v2
+#      mounts:
+#        - source: docs/reference
+#          target: data/compose-cli
+#          includeFiles: "*.yaml"

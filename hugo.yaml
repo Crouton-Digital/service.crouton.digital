@@ -244,111 +244,111 @@ module:
         - source: docs/api
           target: static/reference/engine
           includeFiles: "*.yaml"
-#
-#    - path: github.com/moby/buildkit
-#      mounts:
-#        - source: frontend/dockerfile/docs/reference.md
-#          target: content/engine/reference/builder.md
-#        - source: docs/buildkitd.toml.md
-#          target: content/build/buildkit/toml-configuration.md
-#        - source: docs/attestations/slsa-definitions.md
-#          target: content/build/attestations/slsa-definitions.md
-#        - source: docs/attestations/attestation-storage.md
-#          target: content/build/attestations/attestation-storage.md
-#
-#    - path: github.com/docker/buildx
-#      mounts:
-#        - source: docs/bake-reference.md
-#          target: content/build/bake/reference.md
-#
-#    - path: github.com/docker/scout-cli
-#      mounts:
-#        - source: docs
-#          includeFiles: "*.yaml"
-#          target: data/scout-cli
-#
-#    - path: github.com/docker/cli
-#      mounts:
-#        - source: docs/extend
-#          target: content/engine/extend
-#          excludefiles: "index.md"
-#        - source: docs/extend/index.md
-#          target: content/engine/extend/_index.md
-#        - source: docs/deprecated.md
-#          target: content/engine/deprecated.md
-#        - source: docs/reference/run.md
-#          target: content/engine/reference/run.md
-#        - source: docs/reference/commandline/cli.md
-#          target: content/engine/reference/commandline/cli.md
-#        - source: docs/reference/commandline/dockerd.md
-#          target: content/engine/reference/commandline/dockerd.md
-#
-#    - path: github.com/docker/compose-cli
-#      mounts:
-#        - source: docs/aci-compose-features.md
-#          target: content/cloud/aci-compose-features.md
-#        - source: docs/aci-container-features.md
-#          target: content/cloud/aci-container-features.md
-#        - source: docs/ecs-architecture.md
-#          target: content/cloud/ecs-architecture.md
-#        - source: docs/ecs-compose-examples.md
-#          target: content/cloud/ecs-compose-examples.md
-#        - source: docs/ecs-compose-features.md
-#          target: content/cloud/ecs-compose-features.md
-#
-#    - path: github.com/distribution/distribution
-#      mounts:
-#      - source: docs
-#        target: content/registry
-#        excludeFiles:
-#        - "**/index.md"
-#        - "**/api.md.tmpl"
-#      - source: docs/spec/index.md
-#        target: content/registry/spec/_index.md
-#      - source: docs/spec/auth/index.md
-#        target: content/registry/spec/auth/_index.md
-#
-#    - path: github.com/compose-spec/compose-spec
-#      mounts:
-#      - source: 01-status.md
-#        target: content/compose/compose-file/01-status.md
-#      - source: 02-model.md
-#        target: content/compose/compose-file/02-model.md
-#      - source: 03-compose-file.md
-#        target: content/compose/compose-file/03-compose-file.md
-#      - source: 04-version-and-name.md
-#        target: content/compose/compose-file/04-version-and-name.md
-#      - source: 05-services.md
-#        target: content/compose/compose-file/05-services.md
-#      - source: 06-networks.md
-#        target: content/compose/compose-file/06-networks.md
-#      - source: 07-volumes.md
-#        target: content/compose/compose-file/07-volumes.md
-#      - source: 08-configs.md
-#        target: content/compose/compose-file/08-configs.md
-#      - source: 09-secrets.md
-#        target: content/compose/compose-file/09-secrets.md
-#      - source: 10-fragments.md
-#        target: content/compose/compose-file/10-fragments.md
-#      - source: 11-extension.md
-#        target: content/compose/compose-file/11-extension.md
-#      - source: 12-interpolation.md
-#        target: content/compose/compose-file/12-interpolation.md
-#      - source: 13-merge.md
-#        target: content/compose/compose-file/13-merge.md
-#      - source: 14-include.md
-#        target: content/compose/compose-file/14-include.md
-#      - source: 15-profiles.md
-#        target: content/compose/compose-file/15-profiles.md
-#      - source: build.md
-#        target: content/compose/compose-file/build.md
-#      - source: deploy.md
-#        target: content/compose/compose-file/deploy.md
-#      - source: develop.md
-#        target: content/compose/compose-file/develop.md
 
-#    - path: github.com/docker/compose/v2
-#      mounts:
-#        - source: docs/reference
-#          target: data/compose-cli
-#          includeFiles: "*.yaml"
+    - path: github.com/moby/buildkit
+      mounts:
+        - source: frontend/dockerfile/docs/reference.md
+          target: content/engine/reference/builder.md
+        - source: docs/buildkitd.toml.md
+          target: content/build/buildkit/toml-configuration.md
+        - source: docs/attestations/slsa-definitions.md
+          target: content/build/attestations/slsa-definitions.md
+        - source: docs/attestations/attestation-storage.md
+          target: content/build/attestations/attestation-storage.md
+
+    - path: github.com/docker/buildx
+      mounts:
+        - source: docs/bake-reference.md
+          target: content/build/bake/reference.md
+
+    - path: github.com/docker/scout-cli
+      mounts:
+        - source: docs
+          includeFiles: "*.yaml"
+          target: data/scout-cli
+
+    - path: github.com/docker/cli
+      mounts:
+        - source: docs/extend
+          target: content/engine/extend
+          excludefiles: "index.md"
+        - source: docs/extend/index.md
+          target: content/engine/extend/_index.md
+        - source: docs/deprecated.md
+          target: content/engine/deprecated.md
+        - source: docs/reference/run.md
+          target: content/engine/reference/run.md
+        - source: docs/reference/commandline/cli.md
+          target: content/engine/reference/commandline/cli.md
+        - source: docs/reference/commandline/dockerd.md
+          target: content/engine/reference/commandline/dockerd.md
+
+    - path: github.com/docker/compose-cli
+      mounts:
+        - source: docs/aci-compose-features.md
+          target: content/cloud/aci-compose-features.md
+        - source: docs/aci-container-features.md
+          target: content/cloud/aci-container-features.md
+        - source: docs/ecs-architecture.md
+          target: content/cloud/ecs-architecture.md
+        - source: docs/ecs-compose-examples.md
+          target: content/cloud/ecs-compose-examples.md
+        - source: docs/ecs-compose-features.md
+          target: content/cloud/ecs-compose-features.md
+
+    - path: github.com/distribution/distribution
+      mounts:
+      - source: docs
+        target: content/registry
+        excludeFiles:
+        - "**/index.md"
+        - "**/api.md.tmpl"
+      - source: docs/spec/index.md
+        target: content/registry/spec/_index.md
+      - source: docs/spec/auth/index.md
+        target: content/registry/spec/auth/_index.md
+
+    - path: github.com/compose-spec/compose-spec
+      mounts:
+      - source: 01-status.md
+        target: content/compose/compose-file/01-status.md
+      - source: 02-model.md
+        target: content/compose/compose-file/02-model.md
+      - source: 03-compose-file.md
+        target: content/compose/compose-file/03-compose-file.md
+      - source: 04-version-and-name.md
+        target: content/compose/compose-file/04-version-and-name.md
+      - source: 05-services.md
+        target: content/compose/compose-file/05-services.md
+      - source: 06-networks.md
+        target: content/compose/compose-file/06-networks.md
+      - source: 07-volumes.md
+        target: content/compose/compose-file/07-volumes.md
+      - source: 08-configs.md
+        target: content/compose/compose-file/08-configs.md
+      - source: 09-secrets.md
+        target: content/compose/compose-file/09-secrets.md
+      - source: 10-fragments.md
+        target: content/compose/compose-file/10-fragments.md
+      - source: 11-extension.md
+        target: content/compose/compose-file/11-extension.md
+      - source: 12-interpolation.md
+        target: content/compose/compose-file/12-interpolation.md
+      - source: 13-merge.md
+        target: content/compose/compose-file/13-merge.md
+      - source: 14-include.md
+        target: content/compose/compose-file/14-include.md
+      - source: 15-profiles.md
+        target: content/compose/compose-file/15-profiles.md
+      - source: build.md
+        target: content/compose/compose-file/build.md
+      - source: deploy.md
+        target: content/compose/compose-file/deploy.md
+      - source: develop.md
+        target: content/compose/compose-file/develop.md
+
+    - path: github.com/docker/compose/v2
+      mounts:
+        - source: docs/reference
+          target: data/compose-cli
+          includeFiles: "*.yaml"

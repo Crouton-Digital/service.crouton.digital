@@ -6,7 +6,7 @@ theme: "your-theme"
 description: "A cool site!"
 
 algolia:
-  index: "index-name"
-  key: "[your API key]"
-  appID: "[your app id]"
+  index: "services"
+  key: "dad9958048bbb268af3435fdb8da2c52"
+  appID: "L22VPDDY7O"
 ---

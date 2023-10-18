@@ -1,0 +1,12 @@
+---
+baseURL: "/"
+languageCode: "en-us"
+title: "Your site name"
+theme: "your-theme"
+description: "A cool site!"
+
+algolia:
+  index: "index-name"
+  key: "[your API key]"
+  appID: "[your app id]"
+---

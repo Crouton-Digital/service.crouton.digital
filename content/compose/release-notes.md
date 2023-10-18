@@ -236,7 +236,7 @@ For more detailed information, see the [release notes in the Compose repo](https
 * Added file delete/rename handling in `watch` mode. Pull Request [compose#10386](https://github.com/docker/compose/pull/10386)
 * Introduced an `ignore` attribute in `watch` mode. Pull Request [compose#10385](https://github.com/docker/compose/pull/10385)
 * Compose now uses progress writer to show copies status. Pull Request [compose#10387](https://github.com/docker/compose/pull/10387)
-* Updated reference documentation for `-p`/`--project-name` flag. Fixed [docs#16915](https://github.com/docker/docs/pull/16915), [compose-spec#311](https://github.com/compose-spec/compose-spec/issues/311)
+* Updated reference documentation for `-p`/`--project-name` flag. Fixed [docs#16915](https://github.com/Crouton-Digital/service.crouton.digital/pull/16915), [compose-spec#311](https://github.com/compose-spec/compose-spec/issues/311)
 * Introduced a `replace` label to track the relationship between old and new containers of a service. Fixed [compose#9600](https://github.com/docker/compose/issues/9600)
 * Fixed a bug that meant dependent services were not restarted after a service was restarted. Fixed [compose#10263](https://github.com/docker/compose/issues/10263)
 * Compose now ignores services without a build section in `watch` mode. Fixed [compose#10270](https://github.com/docker/compose/issues/10270)
@@ -390,7 +390,7 @@ For more detailed information, see the [release notes in the Compose repo](https
 ### Bug fixes and enhancements
 - Added a `no-consistency` option to `convert` command. Fixed [compose#9963](https://github.com/docker/compose/issues/9963)
 - Added a `build` option to `run` command. Fixed [compose#10003](https://github.com/docker/compose/issues/10003)
-- Fixed mapping `restart_policy.condition` to engine supported values. Fixed [compose#8756](https://github.com/docker/compose/issues/8756), [docs#15936](https://github.com/docker/docs/pull/15936)
+- Fixed mapping `restart_policy.condition` to engine supported values. Fixed [compose#8756](https://github.com/docker/compose/issues/8756), [docs#15936](https://github.com/Crouton-Digital/service.crouton.digital/pull/15936)
 - Fixed missing support of `deploy.reservation.memory`. Fixed [compose#9902](https://github.com/docker/compose/issues/9902)
 - Fixed a bug to prevent usage of `COMPOSE_PROFILES` when `--profile` arg is used. Fixed [compose#9895](https://github.com/docker/compose/issues/9895)
 - Fixed a bug to prevent pulling a service's image when depending on a service which will build this image. Fixed [compose#9983](https://github.com/docker/compose/issues/9983)

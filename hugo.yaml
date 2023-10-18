@@ -1,4 +1,4 @@
-title: Docker Docs
+title: Service Crouton Digital
 baseURL: https://services.docker.com
 refLinksErrorLevel: ERROR
 enableGitInfo: true
@@ -87,7 +87,7 @@ params:
     apikey: 2899036ce47dba191b8dc1758e4bc6a4
     indexname: docker
 
-  repo: https://github.com/docker/docs
+  repo: https://github.com/Crouton-Digital/service.crouton.digital
   docs_url: https://services.docker.com
 
   latest_engine_api_version: "1.43"

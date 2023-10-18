@@ -30,5 +30,5 @@ If you don't see the feedback widget, try turning off your content filtering
 extension or ad blocker, if you use one.
 
 You can also submit an issue on
-[the docs GitHub repository](https://github.com/docker/docs/issues/new),
+[the docs GitHub repository](https://github.com/Crouton-Digital/service.crouton.digital/issues/new),
 if you prefer.

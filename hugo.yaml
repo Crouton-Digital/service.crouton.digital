@@ -78,9 +78,9 @@ languages:
 params:
   analytics:
     hotjar:
-      prod: 3169877
-      stage: 3218181
-    google: GTM-WL2QLG5
+      prod: 3699267
+      stage: 3699267
+    google: G-7JDVFRP2P4
 #    onetrust: 8e0ebfd9-035d-4ec2-9b2f-a2de9c09f906
   algolia:
     appid: L22VPDDY7O

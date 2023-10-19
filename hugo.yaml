@@ -109,11 +109,11 @@ params:
 
 menus:
   main:
-  - name: Guides
-    url: /get-started/overview/
+  - name: Mainnets
+    url: /mainnets/
     weight: 1
-  - name: FAQ
-    url: /faq/
+  - name: Testnets
+    url: /testnets/
     weight: 2
 
   footer:

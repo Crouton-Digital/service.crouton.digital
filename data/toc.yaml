@@ -1,6 +1,6 @@
-Guides:
-- title: Services overview
-  path: /get-started/overview/
+Mainnets:
+- title: Mainnets
+  path: /mainnets/
 - sectiontitle: Get started
   section:
     - title: "Part 1: Overview"
@@ -8,12 +8,11 @@ Guides:
     - title: "Part 2: Containerize an application"
       path: /get-started/02_our_app/
 
-FAQ:
-  - title: FAQ
-    path: /faq/
-  - sectiontitle: Get started
+Testnets:
+  - title: Testnets
+    path: /testnets/
+  - sectiontitle: Cascadia
     section:
-      - title: "Part 1: Overview"
-        path: /get-started/
-      - title: "Part 2: Containerize an application"
-        path: /get-started/02_our_app/
+      - title: "Part 1: Install cascadia node"
+        path: /testnets/cascadia_6201-1/
+

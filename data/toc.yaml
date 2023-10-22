@@ -15,4 +15,6 @@ Testnets:
     section:
       - title: "Part 1: Install cascadia node"
         path: /testnets/cascadia_6201-1/
+      - title: "Endpoints"
+        path: /testnets/cascadia_6201-1/
 

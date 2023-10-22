@@ -4,7 +4,7 @@ description: How to install cascadia node
 keywords: cascadia, node, install
 ---
 ---
-title: State
+title: State Sync
 description: How to install cascadia node
 keywords: cascadia, node, install
 ---

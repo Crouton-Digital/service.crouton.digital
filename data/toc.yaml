@@ -13,8 +13,8 @@ Testnets:
     path: /testnets/
   - sectiontitle: Cascadia
     section:
-      - title: "Part 1: Install cascadia node"
+      - title: "⚙️ Install cascadia node"
         path: /testnets/cascadia_6201-1/
-      - title: "Endpoints"
+      - title: "🔗 Endpoints"
         path: /testnets/cascadia_6201-1/
 

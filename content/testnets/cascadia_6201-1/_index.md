@@ -3,6 +3,10 @@ title: Install cascadia node
 description: How to install cascadia node
 keywords: cascadia, node, install
 ---
+title: State
+description: How to install cascadia node
+keywords: cascadia, node, install
+---
 
 ___
 [<img src='https://user-images.githubusercontent.com/113435724/235659132-6e2be26e-5d84-404b-8ebe-712da571ec3c.png' alt='banner' width= '100%'>]()

@@ -85,7 +85,7 @@ params:
   algolia:
     appid: L22VPDDY7O
     apikey: 3e806cfd553be17c3ea081c37702e161
-    indexname: services
+    indexname: service
 
   repo: https://github.com/Crouton-Digital/service.crouton.digital
   docs_url: https://services.crouton.digital/

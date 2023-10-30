@@ -6,7 +6,7 @@ theme: "your-theme"
 description: "A cool site!"
 
 algolia:
-  index: "services"
+  index: "service"
   key: "dad9958048bbb268af3435fdb8da2c52"
   appID: "L22VPDDY7O"
 ---

@@ -7,6 +7,6 @@ description: "A cool site!"
 
 algolia:
   index: "service"
-  key: "dad9958048bbb268af3435fdb8da2c52"
+  key: "3e806cfd553be17c3ea081c37702e161"
   appID: "L22VPDDY7O"
 ---

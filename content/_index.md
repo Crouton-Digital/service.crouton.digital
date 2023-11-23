@@ -60,10 +60,10 @@ testnet:
     description: Andromeda is an all on-chain and multi-chain suite of products, tools, and utilities enabled by a decentralized Operating System we call aOS.
   - title: Anoma
     image:
-      dark: /assets/images/networks/anoma.png
-      light: /assets/images/networks/anoma.png
+      dark: /assets/images/networks/namada.png
+      light: /assets/images/networks/namada.png
     link: /testnets/
-    description: Anoma is building a specialised layer-1 blockchain settlement layer based on Proof-of-Stake. It will provide infrastructure for private and user-friendly exchange of any blockchain assets while abstracting away the complexities of multi-token industry.
+    description: Namada delivers an unparalleled layer of privacy across a myriad of assets, decentralized applications, and even entire blockchain networks.
   - title: Archway
     image:
       dark: /assets/images/networks/archway.png

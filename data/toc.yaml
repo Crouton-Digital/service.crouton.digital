@@ -12,8 +12,18 @@ Testnets:
     path: /testnets/
   - sectiontitle: Cascadia
     section:
-      - title: "⚙️ Install cascadia node"
-        path: /testnets/cascadia_6201-1/
-      - title: "🔗 Endpoints"
-        path: /testnets/cascadia_6201-1/Endpoints/
+      - sectiontitle: "🔗 API & Sync"
+        section:
+        - title: "RPC, API, GRPC"
+          path: /testnets/cascadia_6201-1/Endpoints/
+      - sectiontitle: "⚙️ Installation"
+        section:
+        - title: "Manual installation"
+          path: /testnets/cascadia_6201-1/
+      - sectiontitle: "⚙️ Upgrade"
+        section:
+      - sectiontitle: "Official Resources"
+        section:
+        - title: "Website"
+          path: https://cascadiamotion.com/
 

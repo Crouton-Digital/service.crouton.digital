@@ -58,7 +58,7 @@ testnet:
       light: /assets/images/networks/andromeda.png
     link: /testnets/
     description: Andromeda is an all on-chain and multi-chain suite of products, tools, and utilities enabled by a decentralized Operating System we call aOS.
-  - title: Anoma
+  - title: Namada
     image:
       dark: /assets/images/networks/namada.png
       light: /assets/images/networks/namada.png

@@ -1,6 +1,6 @@
 ---
-title: Frequently asked questions
-description: Landing page to common FAQ topics
+title: Testnet Services
+description: Testnet Services
 keywords: faqs, desktop, Hub, Scout, Engine, Build, Extensions
 grid:
 - title: Subscription
@@ -23,6 +23,3 @@ grid:
   link: /desktop/faqs/general/
 ---
 
-Explore popular FAQ topics.
-
-{{< grid >}}

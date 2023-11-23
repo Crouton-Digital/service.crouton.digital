@@ -4,9 +4,8 @@ Mainnets:
 - sectiontitle: Get started
   section:
     - title: "Part 1: Overview"
-      path: /get-started/
-    - title: "Part 2: Containerize an application"
-      path: /get-started/02_our_app/
+      path: /mainnets/
+
 
 Testnets:
   - title: Testnets
@@ -16,5 +15,5 @@ Testnets:
       - title: "⚙️ Install cascadia node"
         path: /testnets/cascadia_6201-1/
       - title: "🔗 Endpoints"
-        path: /testnets/cascadia_6201-1/
+        path: /testnets/cascadia_6201-1/Endpoints/
 

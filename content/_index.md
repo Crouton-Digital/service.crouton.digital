@@ -1,6 +1,6 @@
 ---
 title: Home
-description: Home page for Docker's documentation
+description: Home page for Crouton Digital's documentation
 keywords: Docker, documentation, manual, guide, reference, api, samples
 mainnets:
 - title: Band

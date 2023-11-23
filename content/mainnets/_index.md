@@ -1,10 +1,10 @@
 ---
-title: Frequently asked questions
-description: Landing page to common FAQ topics
-keywords: faqs, desktop, Hub, Scout, Engine, Build, Extensions
+title: Mainnet Services
+description: Pick a project from the list below to view guides and commands.
+keywords: mainnet, services, 
 grid:
-- title: Subscription
-  icon: contact_page
+- title: Axelar
+  image: contact_page
   link: /subscription/faq/
 - title: Billing
   icon: credit_score
